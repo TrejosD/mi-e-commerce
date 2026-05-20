@@ -4,7 +4,9 @@ Proyecto hecho por Diego Trejos como practica de HTML Y CSS combinando grid y fl
 
 ## Acceso
 
-pegar link pages
+```
+https://trejosd.github.io/mi-e-commerce/
+```
 
 ## Descripción
 
