@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "side-menu contain"
+    "foot foot";
+    min-height: 100dvh;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 90px auto 90px;
+    background-color: #e1d6d6;
+}
+.head{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blue{
+    background-color: #313570;
+    color: #f3f3f3;
+}
+
+.side-menu{
+    grid-area: side-menu;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+span{
+    color: #6f6969;
+}
+
+.menu-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-items li{
+    cursor: pointer;
+}
+
+.contain{
+    grid-area: contain;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    column-gap: 8px;
+    row-gap: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    max-height: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card button{
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.img{
+    height: 220px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.foot{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+}
